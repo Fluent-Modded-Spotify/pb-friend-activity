@@ -16,9 +16,9 @@ Add the extension to your browser from the [Chrome Web Store](https://chrome.goo
 
 ### 2. Project Setup
 
-1. Run `git clone https://github.com/jackweatherford/spotify-friend-activity.git`
+1. Run `git clone https://github.com/Fluent-Modded-Spotify/pb-friend-activity.git`
 
-2. Run `cd spotify-friend-activity`
+2. Run `cd pb-friend-activity`
 
 3. Run `npm install`
 
