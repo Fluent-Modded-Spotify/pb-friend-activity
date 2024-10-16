@@ -1,0 +1,534 @@
+.Root__nav-bar {
+  z-index: 1 !important;
+  max-width: 85px !important;
+}
+
+.main-navBar-navBar {
+  width: 85px !important;
+  padding-top: 0;
+}
+
+/* Fade effect when scrolling down playlists */
+.main-rootlist-rootlistDividerGradient {
+  background: linear-gradient(180deg,
+      rgba(var(--spice-main), 0.7),
+      transparent);
+}
+
+.playlist-playlist-playlistDescription {
+  color: var(--spice-subtext) !important;
+}
+
+/* Rounded top-left corner + left/top border for main content window */
+.main-navBar-navBar::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -1px;
+  z-index: 1;
+  border-top-left-radius: var(--border-radius-2);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: -8px -8px 0 var(--spice-sidebar);
+  border-left: 1px solid var(--spice-dark-border);
+  border-top: 1px solid var(--spice-dark-border);
+  border-right: none;
+  border-bottom: none;
+  pointer-events: none;
+}
+
+.main-navBar-navBarLink {
+  border-radius: var(--border-radius-2);
+  color: var(--spice-text);
+  height: 65px !important;
+  display: block;
+  padding-top: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 4px;
+  text-align: center;
+  position: relative;
+}
+
+.main-navBar-navBarLink span,
+.main-createPlaylistButton-text {
+  font-size: 10.5px !important;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-top: 4px;
+  white-space: pre;
+  color: var(--spice-subtext);
+}
+
+.main-navBar-navBarLinkActive span {
+  display: none;
+}
+
+/* Center Icon */
+.main-navBar-navBarLinkActive svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-navBar-navBarLinkActive>.icon,
+.main-navBar-navBarLinkActive .main-navBar-icon,
+.main-navBar-navBarLinkActive>.main-navBar-icon {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: auto;
+}
+
+.main-navBar-navBarLinkActive {
+  padding: 0;
+}
+
+.main-navBar-entryPoints {
+  padding-top: 0 !important;
+}
+
+.main-navBar-navBarItem {
+  padding: 0 9px 0 9px;
+}
+
+.main-type-mestoBold {
+  font-weight: normal !important;
+}
+
+.navBar-navBarLink-accent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 25px;
+  background-color: var(--spice-accent);
+  border-radius: var(--border-radius-2);
+  display: none;
+}
+
+.main-navBar-navBarLinkActive>.navBar-navBarLink-accent,
+.main-yourLibraryX-navLinkActive>.main-yourLibraryX-navLink-accent {
+  display: block !important;
+}
+
+.main-navBar-navBarLinkActive,
+.main-navBar-navBarLinkActive:hover,
+.main-navBar-navBarLinkActive:active,
+.main-navBar-navBarLinkActive:focus {
+  background-color: var(--spice-selected-row);
+  color: var(--spice-not-selected);
+  transition: 167ms ease-out all;
+}
+
+.main-navBar-navBarLink {
+  transition: background-color ease-out 167ms;
+}
+
+/* playlist sidebar */
+
+.main-rootlist-rootlist .os-content {
+  padding: 0px 0px !important;
+}
+
+.main-rootlist-rootlist {
+  --left-sidebar-item-height: 48px;
+  --left-sidebar-padding-left: 10px;
+  --left-sidebar-padding-right: 10px;
+  --left-sidebar-item-indentation-width: 1px;
+  margin-top: 0;
+}
+
+.main-rootlist-rootlistPlaylistsScrollNode {
+  height: calc(100% - 220px);
+}
+
+.main-rootlist-wrapper {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.main-rootlist-rootlistItem {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.main-rootlist-rootlistItemLink {
+  background-position: center;
+}
+
+.main-rootlist-rootlistItemLink:link,
+.main-rootlist-rootlistItemLink:visited,
+.main-rootlist-rootlistPlaylistHeader {
+  color: var(--spice-text);
+  background-color: var(--spice-card);
+  background-size: cover;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+}
+
+.main-rootlist-rootlistItemLink:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.main-rootlist-textWrapper,
+.main-rootlist-statusIcon {
+  display: none;
+}
+
+.main-rootlist-expandArrow {
+  color: var(--spice-text);
+  position: relative;
+  margin-inline-start: -16px;
+  right: -6px;
+  top: 16px;
+  height: 16px;
+}
+
+.main-rootlist-statusIcons {
+  margin-inline-start: -20px;
+  position: relative;
+  right: 8px;
+  right: 17px !important;
+  top: -4px;
+}
+
+.main-rootlist-rootlistItemLink:hover,
+.main-createPlaylistButton-button:hover,
+.main-collectionLinkButton-collectionLinkButton:hover {
+  filter: brightness(50%);
+}
+
+.main-rootlist-statusIcons>button {
+  color: var(--spice-text);
+}
+
+.main-rootlist-rootlistItemLinkActive~.main-rootlist-statusIcons>button {
+  color: var(--spice-shadow);
+}
+
+.main-rootlist-statusIcons>div {
+  margin-left: 8px;
+}
+
+/* Right sidebar  */
+
+.main-nowPlayingView-panelOpenDiv .main-trackInfo-container {
+  margin-left: 0 !important;
+}
+
+.main-nowPlayingView-trackInfo .main-trackInfo-container {
+  margin-left: 0 !important;
+}
+
+.main-nowPlayingWidget-trackInfo {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.main-nowPlayingView-panelOpenDiv .main-nowPlayingView-section:not(.main-nowPlayingView-lyricsGradient) {
+  background-color: var(--spice-card) !important;
+}
+
+.main-nowPlayingView-panelOpenDiv .artist-artistOnTour-timeAndVenue.artist-artistOnTour-condensed,
+.main-nowPlayingView-panelOpenDiv .main-nowPlayingView-openQueue,
+.main-nowPlayingView-panelOpenDiv .svHFeMC3Ef_TpSdRyvsM {
+  color: var(--spice-subtext) !important;
+}
+
+.main-nowPlayingView-panelOpenDiv .main-nowPlayingView-openQueue:hover,
+.main-nowPlayingView-panelOpenDiv .svHFeMC3Ef_TpSdRyvsM:hover {
+  color: var(--spice-text) !important;
+}
+
+.main-nowPlayingView-content {
+  --text-subdued: var(--spice-subtext);
+}
+
+/* tracklist */
+
+.main-trackList-trackList .main-virtualScrollList-wrapper,
+.main-trackList-trackList .main-rootlist-wrapper {
+  background-color: var(--spice-card);
+  border-radius: var(--border-radius-2);
+  padding: 8px;
+}
+
+.main-trackList-trackList {
+  padding-bottom: 24px;
+  background-color: var(--spice-card);
+  border-radius: var(--border-radius-2);
+}
+
+.main-trackList-trackListHeader.main-trackList-trackListHeaderStuck {
+  padding: 0px;
+  margin: 0px;
+  border-bottom: none;
+  background: var(--spice-card);
+}
+
+.main-trackList-trackListRow {
+  border-radius: var(--border-radius-2);
+}
+
+.main-trackList-trackListRow:hover {
+  background-color: rgba(var(--spice-rgb-selected-row), 0.2);
+}
+
+.main-trackList-trackListRow:active {
+  background-color: rgba(var(--spice-rgb-selected-row), 0.4);
+}
+
+.main-trackList-trackListRow.main-trackList-selected,
+.main-trackList-trackListRow.main-trackList-selected:hover {
+  background-color: var(--spice-selected-row);
+}
+
+.main-tag-container,
+.main-trackList-rowImage {
+  border-radius: var(--border-radius-3);
+}
+
+.main-trackList-rowTitle {
+  color: var(--spice-text) !important;
+}
+
+.main-trackList-rowDuration {
+  color: var(--spice-subtext) !important;
+}
+
+.main-trackList-trackListRow.main-trackList-selected span:not(.main-tag-container),
+.main-trackList-trackListRow.main-trackList-selected:hover span:not(.main-tag-container),
+.main-trackList-trackListRow.main-trackList-selected:active span:not(.main-tag-container),
+.main-trackList-trackListRow.main-trackList-selected:focus span:not(.main-tag-container),
+.main-trackList-trackListRow.main-trackList-selected a,
+.main-trackList-trackListRow.main-trackList-selected:hover a,
+.main-trackList-trackListRow.main-trackList-selected:active a,
+.main-trackList-trackListRow.main-trackList-selected:focus a,
+.main-trackList-trackListRow.main-trackList-selected button:not(.main-trackList-rowHeartButton),
+.main-trackList-trackListRow.main-trackList-selected:hover button:not(.main-trackList-rowHeartButton),
+.main-trackList-trackListRow.main-trackList-selected:active button:not(.main-trackList-rowHeartButton),
+.main-trackList-trackListRow.main-trackList-selected:focus button:not(.main-trackList-rowHeartButton),
+.main-trackList-trackListRow.main-trackList-selected div,
+.main-trackList-trackListRow.main-trackList-selected:hover div,
+.main-trackList-trackListRow.main-trackList-selected:active div,
+.main-trackList-trackListRow.main-trackList-selected:focus div {
+  color: var(--spice-text) !important;
+}
+
+.main-trackList-trackListHeader {
+  background-color: transparent !important;
+  padding: 0 calc(var(--content-spacing) / 2);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+._110dbc41d89af63f97cdd8b7cd7fea47-scss {
+  border: 1px solid var(--spice-text);
+}
+
+.main-trackList-trackListRow.main-trackList-selected ._110dbc41d89af63f97cdd8b7cd7fea47-scss,
+.main-trackList-trackListRow.main-trackList-selected:hover ._110dbc41d89af63f97cdd8b7cd7fea47-scss,
+.main-trackList-trackListRow.main-trackList-selected:active ._110dbc41d89af63f97cdd8b7cd7fea47-scss,
+.main-trackList-trackListRow.main-trackList-selected:focus ._110dbc41d89af63f97cdd8b7cd7fea47-scss,
+.main-trackList-trackListRow.main-trackList-selected .main-button-outlined {
+  border: 1px solid var(--spice-text);
+}
+
+.main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
+  border-bottom: none;
+  background: none;
+}
+
+.main-trackList-statusChangeUp {
+  color: var(--green);
+}
+
+.main-trackList-playingIcon {
+  mask-image: var(--equalizer-svg);
+  -webkit-mask-image: var(--equalizer-svg);
+  background: var(--spice-text);
+  content-visibility: hidden;
+}
+
+.main-trackList-selected .main-trackList-playingIcon {
+  background: var(--spice-text);
+}
+
+.main-trackList-rowImageWithPlay .main-trackList-rowPlayPauseButton {
+  width: 24px;
+  height: 24px;
+}
+
+.main-trackList-rowImageWithPlay .main-trackList-rowImagePlayPauseButton {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-radius-3);
+}
+
+/* headers */
+
+.main-userWidget-box,
+.main-avatar-avatar,
+.main-avatar-image {
+  border-radius: 8px;
+}
+
+.main-globalNav-searchInputContainer .SFAoASy0S_LZJmYZ3Fh9,
+.main-globalNav-searchInputContainer input {
+  border-radius: 8px !important;
+  background-color: rgba(var(--spice-rgb-card), 0.5) !important;
+  box-shadow: none !important;
+}
+
+.main-globalNav-searchInputContainer input:hover {
+  background-color: rgba(var(--spice-rgb-card), 0.5) !important;
+}
+
+.x-searchInput-searchInputInput:focus,
+.main-globalNav-searchInputContainer input:focus {
+  background-color: rgba(var(--spice-rgb-card), 0.75) !important;
+  border-bottom: 2px solid var(--spice-accent) !important;
+}
+
+.search:focus,
+.search-bar:focus,
+.searchbar-bar:focus,
+.search-container .search:focus {
+  background-color: rgba(var(--spice-rgb-card), 0.5) !important;
+  outline: 2px solid var(--spice-subtext) !important;
+}
+
+.main-globalNav-searchInputContainer:has(.gPP3UTf4KHCpkR7fowu7) input:focus {
+  border-radius: 8px 8px 0 0 !important;
+  background: rgba(var(--spice-rgb-card, var(--spice-rgb-main)), 0.75) !important;
+}
+
+.gPP3UTf4KHCpkR7fowu7 {
+  margin-top: 2px;
+  background-color: rgba(var(--spice-rgb-card), 0.75);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.HnlKe49O7x9B5Vm6aPrV,
+.zuvmONH0Veccf2MUDmno,
+.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle {
+  border-radius: 8px !important;
+}
+
+
+.main-entityHeader-image:not(.main-entityHeader-circle) {
+  border-radius: var(--border-radius-1);
+}
+
+.x-sortBox-sortDropdown,
+.x-filterBox-filterInput,
+.x-filterBox-expandButton:focus,
+.x-filterBox-expandButton:hover {
+  border-radius: var(--border-radius-2) !important;
+}
+
+.x-sortBox-sortDropdown {
+  color: var(--spice-text);
+}
+
+.fIDrcz,
+.ghlXvf {
+  fill: var(--spice-text);
+}
+
+.main-navBar-navBar .fIDrcz {
+  fill: var(--spice-alt-text);
+}
+
+.x-filterBox-filterInput {
+  background-color: rgba(var(--spice-rgb-card), 0.6);
+  color: var(--spice-text);
+}
+
+.playlist-inlineSearchBox-filterInput::placeholder,
+.x-filterBox-filterInput::placeholder {
+  color: var(--spice-subtext);
+}
+
+.x-filterBox-searchIconContainer {
+  color: var(--spice-text);
+}
+
+.x-emptyState-container {
+  height: auto;
+  margin-top: 120px;
+}
+
+/* artist page */
+
+.artist-artistOffers-info .artist-artistOffers-description,
+.artist-popularTrackList-seeMore {
+  color: var(--spice-subtext);
+}
+
+.artist-artistOverview-heading,
+.artist-artistPick-heading,
+.artist-artistAbout-heading,
+.QWAQMuWlIwVfc5Cv7hXp,
+._1CRNzNyAMFxnnS30JUo {
+  margin-bottom: 20px !important;
+}
+
+.artist-artistPick-pinnedImage,
+.artist-artistOffers-item {
+  border-radius: var(--border-radius-2) !important;
+}
+
+.artist-artistAbout-container,
+.main-entityHeader-background,
+.main-entityHeader-background.main-entityHeader-overlay {
+  border-radius: var(--border-radius-1);
+}
+
+.main-entityHeader-background.main-entityHeader-overlay {
+  --bgColor: transparent !important;
+  background: none;
+}
+
+.artist-artistOffers-item:hover {
+  background-color: rgba(var(--spice-rgb-selected-row), 0.05) !important;
+}
+
+.artist-artistOffers-item:active {
+  background-color: rgba(var(--spice-rgb-selected-row), 0.1) !important;
+}
+
+.main-entityHeader-background,
+.main-entityHeader-background.main-entityHeader-gradient {
+  transform: scale(1) !important;
+  z-index: -1;
+  border-radius: 0;
+}
+
+[class="main-entityHeader-backgroundColor"] {
+  opacity: min(calc(var(--filter-brightness) + 0.4), 1);
+}
+
+.main-entityHeader-container {
+  background-image: linear-gradient(to bottom,
+      rgb(255 255 255 / 0%),
+      var(--spice-main));
+}
+
+.main-entityHeader-metaDataText,
+.main-entityTitle-subtitle,
+.main-entityHeader-metaDataText span {
+  color: var(--spice-text) !important;
+}
+
+._GJZaoUD9ozPvCUDT2Mp {
+  border-radius: var(--border-radius-3);
+}
